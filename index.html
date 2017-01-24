@@ -26,23 +26,52 @@
          <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"> 
 		
 		<!-- Javascript -->
+        <script src="./js/jquery.js"></script>
    		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="./javascript/jquery.js"></script>	<!-- Latest compiled and minified CSS -->
+			<!-- Latest compiled and minified CSS -->
 	</head>
 
-	<body >
-    	<nav >
-    	</nav>
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="removeActive()">
+
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        Menu
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <i class="fa fa-play-circle"></i><span class="light">WILD</span>ASTRONAUT
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#association">L'ASSOCIATION</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#fondateur">NOS FONDATEURS</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="blog.html">LE bLOG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <header class="intro text-center">
         </header>
         <!-- Section Association -->
-		<section>
+		<section id="association">
        </section>
           <!-- Section Fondateurs -->
-       <section id="foundingSection" >
+       <section id="fondateur">
         </section>
         <footer>
         </footer>
-        <script src=></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
