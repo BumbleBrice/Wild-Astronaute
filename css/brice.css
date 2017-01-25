@@ -1,8 +1,9 @@
+
 body{
 	background-color: black;
  	color: white;
 }
-header body html{
+html body section{
     width: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -26,7 +27,6 @@ p {
     }
 }
 footer{
-
 	background: black;
 	display: flex;
 	text-align: center;
