@@ -48,4 +48,6 @@ width:100%;
 .socialNetwork i:hover { color: blue;
 
 }
-
+.foundingPosition p {
+	font-size: 1.5rem;
+}
