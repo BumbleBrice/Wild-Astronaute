@@ -1,0 +1,55 @@
+/***********************/
+/***SECTION FONDATEUR***/
+/***********************/
+.mar0A {
+	margin: 0 auto;
+}
+
+
+
+#fondateur{
+	background: url("../img/background/s2.jpg") bottom center no-repeat #000;
+	width: 100%;
+    text-align: center;
+    background-size: cover;
+}
+
+#foundingTitle
+{
+	padding-top: 3%;
+}
+
+
+.foundingContainer{
+width:100%;
+}
+
+
+.fontWhite
+{
+	color: white;
+}
+
+.copyright
+ {
+	font-weight: 30px;
+ }
+
+.foundingPhoto{
+	width: 200px;
+	height: 200px;
+}
+
+
+.socialNetwork{
+	padding-bottom: 4%;
+}
+
+.socialNetwork i:hover { color: blue;
+
+}
+.foundingPosition p {
+	font-size: 1.5rem;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+}
