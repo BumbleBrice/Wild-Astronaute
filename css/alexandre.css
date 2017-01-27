@@ -59,11 +59,16 @@
   top: 50px;
 }
 
+.themeFont{
+  font-size: 85%;
+}
+
 .buttonPadding{
-  padding-right: 5vw;
-  padding-left: 5vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  margin-left: 1vw;
+  margin-right: 1.5vw;
+  background-color: black;
 }
 
 @media (min-width: 768px) {
