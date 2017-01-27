@@ -53,6 +53,19 @@
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
+
+.position{
+  position: fixed;
+  top: 50px;
+}
+
+.buttonPadding{
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
