@@ -45,6 +45,7 @@ hr {
     color: black;
     width: 98%;
     margin: 0 auto;
+    display: none;
 }
 @media screen and (min-width: 480px) and (max-width: 768px){
     .articleMax {
@@ -67,12 +68,10 @@ hr {
 }
 .monItem {
     width: 100%;
-    background-color: red; 
-    height: 15vw; 
-    border-style: 
-    solid; border-color: green;
-}
+    background-color: white;
+    color: black;
 
+}
 @media screen and (min-width: 480px) and (max-width: 768px){
     .monItem {
         width: 50%;
@@ -97,6 +96,14 @@ hr {
     z-index: 2;
     margin-top: 10%;
 }
+/*.rowFlexMini {
+    display: flex;
+}*/
+.col40 {
+    width: 40%;
+}
+.col60 {
+    width: 60%;
 }
 
 /*******************/
