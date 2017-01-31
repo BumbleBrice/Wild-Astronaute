@@ -17,6 +17,16 @@ p {
     margin: 0 0 35px;
     line-height: 1.O;
 }
+hr {
+    display: block;
+    clear: both;
+    height: 0;
+    padding: 0;
+    font-family: arial;
+    text-align: center;
+    line-height: 1;
+}
+
 
 @media (min-width: 768px){
     p {
@@ -25,6 +35,74 @@ p {
         line-height: 1.6;
     }
 }
+/*******************/
+/******ARTICLE******/
+/*******************/
+
+.articleMax {
+    background-color: white;
+    padding: 2%;
+    color: black;
+    width: 98%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .articleMax {
+        position: relative;
+        top: 0;
+    }
+}
+.articleMax h2 {
+    margin-top: 2%;
+}
+.articleMax p {
+    font-size: 1.4rem;
+}
+.articleMax h2, p {
+    color: black;
+}
+.rowFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.monItem {
+    width: 100%;
+    background-color: red; 
+    height: 15vw; 
+    border-style: 
+    solid; border-color: green;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .monItem {
+        width: 50%;
+    }
+}
+
+.col30 {
+    width: 30%;
+}
+.col70 {
+    width: 70%;
+}
+@media screen and (max-width: 768px){
+    .col30 {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.col70 {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+}
+}
+
+/*******************/
+/******FOOTER*******/
+/*******************/
+
 footer{
 	background: black;
 	text-align: center;
