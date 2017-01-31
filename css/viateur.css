@@ -6,7 +6,6 @@
 }
 
 
-
 #fondateur{
 	background: url("../img/background/s2.jpg") bottom center no-repeat #000;
 	width: 100%;
@@ -58,13 +57,33 @@ width:100%;
 /***CSS BLOG***/
 /*****************************/
 
-.blogBackground{
-	background-image: url(../img/background/bg_blog1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	
+ .blogBody{
+
+margin: 0;
+padding: 0;
+height: 100vh;
+background-image: url(../img/background/bg_blog1.jpg);
+background-size: cover;
+/*background-repeat: no-repeat;*/
+
+ }
+
+ /*html{
+ 	height: 100%;
+ }*/
+
+
+.blogFooter{
+	padding: 0;
+	margin-bottom: 0px;
+	position: relative;
+
 }
 
+.content{
+	display: flex;
+	/*width: 100%;*/
+}
 
 		/*******************************/
 		/***CSS ARTICLE BLOG MIMIFIER***/
@@ -72,53 +91,116 @@ width:100%;
 
 /*aside list*/
 
-#asideList{
-
-overflow-y: scroll;
-height: 80vh;
-
+aside{
+	overflow-y: scroll;
 }
 
 
 /*article mimifié*/
 
 .articleMim{
-
-width: 23.5vw;
+display: flex;
 overflow: hidden;
-height: 12vw;
+height: auto;
+width: 400px;
+}
+
+/*.articleMim:hover{
+ height: 20vw;
+}*/
+
+.articleMim img{
+width:200px;
+height: 200px;
 
 }
 
-.articleMim img{
-
-width: 10vw;
-height: 10vw;
-float: left;
-margin: 3px;
-	
-
+.articleMim div{
+width: 200px;
+height: 200px;
 }
 
 .articleMim div h3{
-font-size: 1vw;
+	font-size: 140%;
 }
 
 .articleMim div p{
-font-size: 0.9vw;
+font-size: 30%;
+margin-top: 0;
+}
+
+
+.articleMim div p span{
+ display: none;
+}
+
+@media screen and (min-width: 700px) and (max-width: 830px){
+
+
+aside {
+	display:flex;
+	width: 800px;
+}
+
+.content{
+	display: block;
+	margin: 0 auto;
+}
+
+.articleMim{
+display: flex;
+overflow: hidden;
+height: auto;
+width: 400px;
+}
 
 }
 
+@media screen and (min-width: 300px) and (max-width: 700px){
+
+
+aside {
+	display: block;
+	width: 100%;
+
+}
+
+.content{
+	display: block;
+	margin: 0 auto;
+}
+
+}
 
 
 		/****************************/
 		/***CSS ARTICLE EN LECTURE***/
 		/****************************/
 
+.articleView{
+
+width: 70%;
 
 
+}
 
+.articleView img{
 
+width: 30vw;
+height: 30vw;
+float: left;
+margin: 3px;
+	
+}
 
+.articleView div h3{
+font-size: 250%;
+}
+
+.articleView div p{
+font-size: 200%;
+text-align: justify;
+
+}
 
 
