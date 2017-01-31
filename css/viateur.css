@@ -51,7 +51,9 @@ width:100%;
 	font-size: 1.5rem;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.5);
+
 }
+
 
 /******************************/
 /***CSS BLOG***/
@@ -61,10 +63,9 @@ width:100%;
 
 margin: 0;
 padding: 0;
-height: 100vh;
+height: 100%;
 background-image: url(../img/background/bg_blog1.jpg);
 background-size: cover;
-/*background-repeat: no-repeat;*/
 display: block;
 
  }
@@ -75,10 +76,8 @@ display: block;
 
 
 .blogFooter{
-	padding: 0;
+	width: 100%;
 	margin-bottom: 0px;
-	position: relative;
-
 }
 
 .content{
@@ -86,123 +85,125 @@ display: block;
 	margin-top: 150px;
 }
 
+
+
 		/*******************************/
 		/***CSS ARTICLE BLOG MIMIFIER***/
 		/*******************************/
 
-/*aside list*/
-
-aside{
-	overflow-y: scroll;
-}
-
-
-/*article mimifié*/
-
-.articleMim{
-display: flex;
-overflow: hidden;
-height: auto;
-width: 400px;
-}
-
-/*.articleMim:hover{
- height: 20vw;
-}*/
-
-.articleMim img{
-width:200px;
-height: 200px;
-
-}
-
-.articleMim div{
-width: 200px;
-height: 200px;
-}
-
-.articleMim div h3{
-	font-size: 140%;
-}
-
-.articleMim div p{
-font-size: 30%;
-margin-top: 0;
-}
-
-
-.articleMim div p span{
- display: none;
-}
-
-@media screen and (min-width: 700px) and (max-width: 830px){
-
-
-aside {
-	display:flex;
-	width: 800px;
-}
-
-.content{
-	display: block;
-	margin: 0 auto;
-}
-
-.articleMim{
-display: flex;
-overflow: hidden;
-height: auto;
-width: 400px;
-}
-
-}
-
-@media screen and (min-width: 300px) and (max-width: 700px){
-
-
-aside {
-	display: block;
-	width: 100%;
-
-}
-
-.content{
-	display: block;
+.articleMini {
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 20vh;
 	
-	margin-top: 200px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px){
+.articleMini {
+        width: 50%;
+    }
+}
+
+
+
+.articleMini a img{
+
+	width: 38%;
+	margin: 1%;
+}
+
+.articleMini a div{
+
+	width: 60%; 
+	float: right;
+}
+
+.articleMini a div h2{
+	margin:0; 
+	font-size: 2rem;
+}
+
+.articleMini a div p{
+	font-size:1rem; 
+	line-height: 16px;
+	max-height: 50px; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	height: 100%; margin: 0;
 }
 
 
 		/****************************/
 		/***CSS ARTICLE EN LECTURE***/
 		/****************************/
-
-.articleView{
-
-width: 70%;
-
-
+.articleMax {
+    background-color: white;
+    padding: 2%;
+    color: black;
+    width: 98%;
+    margin: 0 auto;
+    display: none;
 }
 
-.articleView img{
-
-width: 30vw;
-height: 30vw;
-float: left;
-margin: 3px;
-	
-}
-
-.articleView div h3{
-font-size: 250%;
-}
-
-.articleView div p{
-font-size: 200%;
-text-align: justify;
-
+@media screen and (min-width: 480px) and (max-width: 768px){
+.articleMax {
+        position: relative;
+        top: 0;
+    }
 }
 
 
+.articleMax h2 {
+    margin-top: 2%;
+}
+.articleMax p {
+    font-size: 1.4rem;
+}
+.articleMax h2, p {
+    color: black;
+}
+
+
+
+/******************************/
+/***DEFINITION DE CLASS***/
+/*****************************/
+
+
+.rowFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col30 {
+    width: 30%;
+}
+.col70 {
+    width: 70%;
+}
+
+
+/*********************************/
+
+@media screen and (max-width: 768px){
+.col30 {
+ 	width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.col70 {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+}
+
+
+/*********************************/
+.col40 {
+    width: 40%;
+}
+.col60 {
+    width: 60%;
+}
