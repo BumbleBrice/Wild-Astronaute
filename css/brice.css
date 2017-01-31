@@ -13,12 +13,9 @@ h1, h2 {
     letter-spacing: 1px;
     
 }
-h3 {
-	
-}
 p {
     margin: 0 0 35px;
-    line-height: 1.6;
+    line-height: 1.O;
 }
 
 @media (min-width: 768px){
@@ -30,9 +27,33 @@ p {
 }
 footer{
 	background: black;
-	display: flex;
 	text-align: center;
 	margin-top: 50px;
 	height: 70px;
+    position: absolute;
+    z-index: 1;
 
+}
+
+
+.cgu {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    bottom: 70px;
+    height: 78vh;
+    width: 99vw;
+    font-size: 0.5rem;
+    color: black;
+    text-align: left;
+    overflow-y:scroll;
+}
+.cgu p {
+    font-size: 1.2rem;
+}
+.cgu h2 {
+    font-size: 2rem;
+}
+.cgu h3 {
+    font-size: 1.8rem;
 }
