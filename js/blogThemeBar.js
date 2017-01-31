@@ -2,24 +2,28 @@
 
 function themePrint(themeTable){
 	let zeroCount = 0;
-	for(let val in themeTable)
-		val === 0 ? zeroCount++;
-	if(zeroCount === themeTable.length){
-		$('planet').removeClass("invisibility");
-		$('sattelite').removeClass("invisibility");
-		$('star').removeClass("invisibility");
-		$('galaxy').removeClass("invisibility");
+
+	for(let val of themeTable){
+		if(val === 0)
+			zeroCount++;
 	}
-	themeTable[0] === 0 ? $('planet').addClass("invisibility") : $('planet').removeClass("invisibility");
-	themeTable[1] === 0 ? $('sattelite').addClass("invisibility") : $('sattelite').removeClass("invisibility");
-	themeTable[2] === 0 ? $('star').addClass("invisibility") : $('star').removeClass("invisibility");
-	themeTable[3] === 0 ? $('galaxy').addClass("invisibility") : $('galaxy').removeClass("invisibility");
+	if(zeroCount === themeTable.length){
+		$('.planet').removeClass("invisibility");
+		$('.satellite').removeClass("invisibility");
+		$('.star').removeClass("invisibility");
+		$('.galaxy').removeClass("invisibility");
+		return;
+	}
+	themeTable[0] === 1 ? $('.planet').removeClass("invisibility") : $('.planet').addClass("invisibility");
+	themeTable[1] === 1 ? $('.satellite').removeClass("invisibility") : $('.satellite').addClass("invisibility");
+	themeTable[2] === 1 ? $('.star').removeClass("invisibility") : $('.star').addClass("invisibility");
+	themeTable[3] === 1 ? $('.galaxy').removeClass("invisibility") : $('.galaxy').addClass("invisibility");
 }
 
 $(function(){
 	let themeTable = [0, 0, 0, 0];
 	$('#planet').bind('click', function(){
-		themeTable[0] === 0 ? themeTable[0] = 1 : themeTable[0] = 0;;
+		themeTable[0] === 0 ? themeTable[0] = 1 : themeTable[0] = 0;
 		themePrint(themeTable);
 	});
 	$('#sattelite').bind('click', function(){
