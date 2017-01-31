@@ -35,6 +35,9 @@ hr {
         line-height: 1.6;
     }
 }
+#about p {
+    color: white;
+}
 /*******************/
 /******ARTICLE******/
 /*******************/
@@ -89,23 +92,23 @@ hr {
     width: 100%;
     position: absolute;
     z-index: 1;
+    }
+    .col70 {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        margin-top: 10%;
+    }
+    /*.rowFlexMini {
+        display: flex;
+    }*/
+    .col40 {
+        width: 40%;
+    }
+    .col60 {
+        width: 60%;
+    }
 }
-.col70 {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    margin-top: 10%;
-}
-/*.rowFlexMini {
-    display: flex;
-}*/
-.col40 {
-    width: 40%;
-}
-.col60 {
-    width: 60%;
-}
-
 /*******************/
 /******FOOTER*******/
 /*******************/
