@@ -32,19 +32,68 @@
 
     </head>
 
-<body  class="blogBody"> <!-- class="blogBackground"> -->
 
-    <nav>
-            
-    </nav>
 
-    <header>
-           
-    </header>
 
-    <div class="container-fluid content">  <!-- begining div container -->
+    <body class="blogBody" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="removeActive()">
 
-             <aside>
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        Menu
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <span class="light">Wild <i class="fa fa-space-shuttle" aria-hidden="true"></i></span> Astronaute
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="index.html">Accueil</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-custom navbar-static-top position navnar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main">
+                        Menu
+                    </button>
+                    <a class="navbar-brand page-scroll themeFont" href="#page-top">
+                        Thèmes</a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <button id="planet" class="btn buttonPadding themeFont"> Planetes </button>
+                        </li>
+                        <li>
+                            <button id="sattelite" class="btn buttonPadding themeFont"> Sattelites </button>
+                        </li>
+                        <li>
+                            <button id="star" class="btn buttonPadding themeFont"> Etoiles </button>
+                        </li>
+                        <li>
+                            <button id="galaxy" class="btn buttonPadding themeFont"> Galaxies </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+   <div class="content">  <!-- begining div container -->
+        <aside>
                 <div id="article1" class="thumbnail articleMim">
                             <img class="img-responsive" src="https://www.nasa.gov/sites/default/files/thumbnails/image/9464656357_dcd9554a40_o.jpg" alt="...">  
                             <div class="caption">
@@ -52,8 +101,7 @@
                                 <p class="hidden">Uranus' moon Miranda is shown in a computer-assembled mosaic of images obtained Jan. 24, 1986, by the Voyager 2 spacecraft. At its closest, the spacecraft came within 81,500 kilometers (50,600 miles) of Uranus's cloudtops on Jan. 24. Voyager 2's images of the five largest moons around Uranus revealed complex surfaces indicative of varying geologic pasts.<span> The cameras also detected 10 previously unseen moons. Several instruments studied the ring system, uncovering the fine detail of the previously known rings and two newly detected rings.
 
                                 Miranda is the innermost and smallest of the five major Uranian satellites, just 480 kilometers (about 300 miles) in diameter. Nine images were combined to obtain this full-disc, south-polar view, which shows the varying geologic provinces of Miranda. The bulk of the photo comprises seven high-resolution images from the Voyager closest-approach sequence. Data from more distant, lower-resolution images were used to fill in gaps along the limb.
-
-                                Miranda's surface consists of two strikingly different major types of terrain. One is an old, heavily cratered, rolling terrain with relatively uniform albedo, or reflectivity. The other is a young, complex terrain characterized by sets of bright and dark bands, scarps and ridges features found in the ovoid regions at the top and bottom and in the distinctive "chevron" feature above and to the right of center.
+                                 Miranda's surface consists of two strikingly different major types of terrain. One is an old, heavily cratered, rolling terrain with relatively uniform albedo, or reflectivity. The other is a young, complex terrain characterized by sets of bright and dark bands, scarps and ridges features found in the ovoid regions at the top and bottom and in the distinctive "chevron" feature above and to the right of center.
 
                                 Final image processing was done by the U.S. Geological Survey in Flagstaff, Ariz. Special navigational data used to improve Voyager's camera pointing were also used to "control" or register the images in the assembly of the mosaic; the data were generated by means of new techniques developed by JPL's Navigation Ancillary Information Facility. The images were projected onto a global sinusoidal map base. The Voyager Project is managed for NASA by Caltech's Jet Propulsion Laboratory.</span></p><br>Image Credit: NASA/JPL/USGS<br>Image: PIA-01490
                             </div>
@@ -75,20 +123,25 @@
                             </div>
                 </div> 
             </aside>
-                   
+                
 
             <!-- Contenu centrale avec affichage de l'article - Fabrice -->
             <article>
 
                     <div>
-                             <div class="thumbnail articleView">
+                             <div class="articleView">
                              
                              </div>
                     </div>
                          
             </article>
-    </div>
-   
+ 
+   </div>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/blogThemeBar.js"></script>
+
 
     
     <!-- <footer class="blogFooter">
@@ -105,7 +158,8 @@
 
                 <span class="fontWhite copyright"> &copy; Wild Astronaute 2017</span>
             </div>
-    </footer>  -->
+    </footer>
+ -->
 </body>
 <script type="text/javascript" src=""></script>
 </html>
