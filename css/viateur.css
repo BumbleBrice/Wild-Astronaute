@@ -6,7 +6,6 @@
 }
 
 
-
 #fondateur{
 	background: url("../img/background/s2.jpg") bottom center no-repeat #000;
 	width: 100%;
@@ -16,7 +15,7 @@
 
 #foundingTitle
 {
-	padding-top: 3%;
+	padding-top: 7%;
 }
 
 
@@ -51,5 +50,159 @@ width:100%;
 .foundingPosition p {
 	font-size: 1.5rem;
 	color: white;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+
+/******************************/
+/***CSS BLOG***/
+/*****************************/
+
+ .blogBody{
+
+margin: 0;
+padding: 0;
+height: 100%;
+background-image: url(../img/background/bg_blog1.jpg);
+background-size: cover;
+display: block;
+
+ }
+
+ /*html{
+ 	height: 100%;
+ }*/
+
+
+.blogFooter{
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.content{
+	display: flex;
+	margin-top: 150px;
+}
+
+
+
+		/*******************************/
+		/***CSS ARTICLE BLOG MIMIFIER***/
+		/*******************************/
+
+.articleMini {
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 20vh;
+	
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+.articleMini {
+        width: 50%;
+    }
+}
+
+
+
+.articleMini a img{
+
+	width: 38%;
+	margin: 1%;
+}
+
+.articleMini a div{
+
+	width: 60%; 
+	float: right;
+}
+
+.articleMini a div h2{
+	margin:0; 
+	font-size: 2rem;
+}
+
+.articleMini a div p{
+	font-size:1rem; 
+	line-height: 16px;
+	max-height: 50px; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	height: 100%; margin: 0;
+}
+
+
+		/****************************/
+		/***CSS ARTICLE EN LECTURE***/
+		/****************************/
+.articleMax {
+    background-color: white;
+    padding: 2%;
+    color: black;
+    width: 98%;
+    margin: 0 auto;
+    display: none;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+.articleMax {
+        position: relative;
+        top: 0;
+    }
+}
+
+
+.articleMax h2 {
+    margin-top: 2%;
+}
+.articleMax p {
+    font-size: 1.4rem;
+}
+.articleMax h2, p {
+    color: black;
+}
+
+
+
+/******************************/
+/***DEFINITION DE CLASS***/
+/*****************************/
+
+
+.rowFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col30 {
+    width: 30%;
+}
+.col70 {
+    width: 70%;
+}
+
+
+/*********************************/
+
+@media screen and (max-width: 768px){
+.col30 {
+ 	width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.col70 {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+}
+
+/*********************************/
+.col40 {
+    width: 40%;
+}
+.col60 {
+    width: 60%;
 }
