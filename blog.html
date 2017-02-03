@@ -15,10 +15,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
         <!-- CSS Personnalisé -->
-        <link rel="stylesheet" type="text/css" href="./css/alexandre.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./css/viateur.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./css/fabrice.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./css/brice.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./css/blog/alexandre.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./css/blog/viateur.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./css/blog/fabrice.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./css/blog/brice.css" media="screen">
         
         <!-- Ajout de Font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -29,11 +29,6 @@
         <!-- Javascript -->
         <script src="./js/jquery.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".testCut p").dotdotdot();
-            });
-        </script>
     </head>
 
 
@@ -44,9 +39,11 @@
         <nav class="navbar navbar-custom navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
+                <a href="index.html">
                     <div type="div" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        Menu
+                        Accueil
                     </div>
+                </a>    
                     <a class="navbar-brand page-scroll" href="#page-top">
                         <span class="light">Wild <i class="fa fa-space-shuttle" aria-hidden="true"></i></span> Astronaute
                     </a>
@@ -64,20 +61,20 @@
                 </div>
             </div>
         </nav>
-        <ul id="nav">
-            <li><a href="#">Choix du thèmes : </a></li>
-            <li><a href="#">Planetes</a></li>
-            <li><a href="#">Satelites</a></li>
-            <li><a href="#">Etoiles</a></li>
-            <li><a href="#">Galaxie</a></li>
-        </ul>
-        <select id="nav_v2">
-            <option value="">Choix du thèmes</option>
-            <option value="#">Planetes</option>
-            <option value="#">Satelites</option>
-            <option value="#">Etoiles</option>
-            <option value="#">Galaxie</option>
-        </select>
+          <nav class="navWrapper">
+            <div class="theme">Choix du thèmes :</div>
+            <input type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="label-toggle"></label>
+            </input>
+            <ul>
+              <a href="#"><li>Planètes</li></a>
+              <a href="#"><li>Satellites</li></a>
+              <a href="#"><li>Galaxie</li></a>
+              <a href="#"><li>Star</li></a>
+            </ul>
+          </nav>
+
+        
         <div class="wrapper">
            <div class="content rowFlex">
                 <div class="col30">
@@ -148,7 +145,7 @@
                     </a>
                 </div>
             </div> 
-        </div>
+        </div> 
         <footer class="footerBlog">
         <div id="cguShow" class="cgu">
                 <h2>Informations légales</h2>

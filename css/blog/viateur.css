@@ -1,0 +1,208 @@
+/***********************/
+/***SECTION FONDATEUR***/
+/***********************/
+.mar0A {
+	margin: 0 auto;
+}
+
+
+#fondateur{
+	background: url("../img/background/s2.jpg") bottom center no-repeat #000;
+	width: 100%;
+    text-align: center;
+    background-size: cover;
+}
+
+#foundingTitle
+{
+	padding-top: 7%;
+}
+
+
+.foundingContainer{
+	width:100%;
+}
+
+
+.fontWhite
+{
+	color: white;
+}
+
+.copyright
+ {
+	font-weight: 30px;
+ }
+
+.socialNetwork{
+	padding: 4%;
+}
+
+.socialNetwork i:hover { color: blue;
+
+}
+.foundingPosition p {
+	font-size: 1.5rem;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+/******************************/
+/***CSS BLOG***/
+/*****************************/
+
+.blogBody{
+	margin: 0;
+	padding: 0;
+	background: url(../../img/background/bg_blog1.jpg) no-repeat center scroll;
+	display: block;
+ }
+
+
+
+/*******************************/
+/***CSS ARTICLE BLOG MIMIFIER***/
+/*******************************/
+
+.articleMini {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: black;
+	cursor: pointer;
+	margin: 0 0 5px 5px;
+	border-radius: 5px;
+}
+.articleMini a div p {
+	overflow: hidden;
+  	height: 100px;
+	line-height: 14px;
+	color: white;
+}
+
+@media screen and (min-width: 769px){
+	
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.articleMini {
+	    width: 49%;
+    }
+}
+	.articleMini a img{
+		width: 38%;
+		margin: 1%;
+	}
+	.articleMini a div{
+		margin: 1% 0;
+		width: 60%; 
+		float: right;
+	}
+	.articleMini a div h2{
+		margin:0; 
+		font-size: 1.5rem;
+	}
+	.articleMini a div p{
+		font-size:1rem; 
+		margin: 0;
+	}
+    .articleMini a div h2{
+		margin:0; 
+		font-size: 1.2rem;
+	}
+@media screen and (min-width: 361px) and (max-width: 480px){
+    .articleMini a div h2{
+		margin:0; 
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 360px) {
+     .articleMini a div h2{
+		margin:0; 
+		font-size: 1.2rem;
+	}
+}
+
+
+
+/****************************/
+/***CSS ARTICLE EN LECTURE***/
+/****************************/
+.articleMax {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2%;
+    color: black;
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+    border-radius: 5px;
+   /*display: none;*/
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+.articleMax {
+        position: relative;
+        top: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+.articleMax {
+        margin-bottom: 26%;
+    }
+}
+
+
+.articleMax h2 {
+    margin-top: 2%;
+}
+.articleMax p {
+    font-size: 1.4rem;
+}
+.articleMax h2, p {
+    color: black;
+}
+
+
+
+
+/******************************/
+/***DEFINITION DE CLASS***/
+/*****************************/
+
+
+.rowFlex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col30 {
+    width: 30%;
+}
+.col70 {
+    width: 70%;
+}
+
+
+
+@media screen and (max-width: 768px){
+.col30 {
+ 	width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.col70 {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+}
+
+/*********************************/
+.col40 {
+    width: 40%;
+}
+.col60 {
+    width: 60%;
+}
+
+
