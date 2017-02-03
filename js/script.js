@@ -14,16 +14,6 @@ function collapseNavbar(){
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
-$(function(){
-	$('a.page-scroll').bind('click', function(event){
-		var $anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $($anchor.attr('href')).offset().top
-		}, 1500, 'easeInOutExpo');
-		event.defaultPrevented;
-	});	
-});
-
 $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
@@ -33,3 +23,22 @@ $('ul.nav > li').click(function (e) {
     $('ul.nav > li').removeClass('active');
     $(this).addClass('active');
 });
+
+//***********************************************
+//Partie pour Smooth scroll en jQuery sans plugin
+//***********************************************
+//Exemple : http://www.design-fluide.com/17-11-2013/un-defilement-anime-smooth-scroll-en-jquery-sans-plugin/
+//<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+//<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+//</script>
+//*********************************************************
+//Fin de la partie pour Smooth scroll en jQuery sans plugin
+//*********************************************************
