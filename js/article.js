@@ -15,7 +15,7 @@ function closeArticle() {
 $(function(){
 	let isPrinted = false;
 		$(".articleMini").bind("click", (e) => {
-			let minArticle = event.currentTarget;
+			let minArticle = e.currentTarget;
 			if(isPrinted){
 				$(".articleMax").remove();
 				isPrinted = false;
