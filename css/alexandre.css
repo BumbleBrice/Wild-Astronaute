@@ -3,6 +3,8 @@
 /***********NAVBAR***********/
 /****************************/
 
+@import "compass/css3";
+
 .navbar-custom {
 	margin-right: 0;
   margin-bottom: 0;
@@ -73,6 +75,11 @@
 
 .invisibility{
   display: none;
+}
+
+button{
+  background-color: red;
+  color:blue;
 }
 
 @media (min-width: 768px) {

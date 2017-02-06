@@ -1,22 +1,27 @@
 "use strict"
 
+function newArticle(minArticle){
+	let newArticle = '<div class="articleMax"><button class="cross">x</button>';
+	newArticle += $(minArticle).html();
+	newArticle += '</div>';
+	$(".col70").html(newArticle);
+}
+
+function closeArticle() {
+	$(".col70").on("click", "button", () => {
+		$(".articleMax").remove();
+	});
+}
 $(function(){
 	let isPrinted = false;
 		$(".articleMini").bind("click", (e) => {
 			let minArticle = event.currentTarget;
-			if(!isPrinted){
-				console.log($(minArticle).html()); 
-				let newArticle = '<div class="articleMax">';
-				newArticle += $(minArticle).html();
-				newArticle += '</div>';
-				$(".col70").html(newArticle);
-				isPrinted = true;
-				console.log(isPrinted);
-			}
-			else{
+			if(isPrinted){
 				$(".articleMax").remove();
 				isPrinted = false;
-				console.log(isPrinted);
 			}
+			newArticle(minArticle);
+			closeArticle();
+			isPrinted = true;
 		});
-	});
+});

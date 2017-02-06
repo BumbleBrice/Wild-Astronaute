@@ -22,7 +22,6 @@ function themePrint(themeTable){
 		$('.satellite').removeClass("invisibility");
 		$('.star').removeClass("invisibility");
 		$('.galaxy').removeClass("invisibility");
-		console.log(themeTable);
 		return themeTable;
 	}
 	themeTable[0] === 1 ? $('.planet').removeClass("invisibility") : $('.planet').addClass("invisibility");
