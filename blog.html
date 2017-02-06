@@ -67,10 +67,10 @@
               <label for="menu-toggle" class="label-toggle"></label>
             </input>
             <ul>
-              <a href="#"><li>Planètes</li></a>
-              <a href="#"><li>Satellites</li></a>
-              <a href="#"><li>Galaxie</li></a>
-              <a href="#"><li>Star</li></a>
+              <a href="#" id="planet"><li>Planètes</li></a>
+              <a href="#" id="sattelite"><li>Satellites</li></a>
+              <a href="#" id="galaxy"><li>Galaxies</li></a>
+              <a href="#" id="star"><li>Etoiles</li></a>
             </ul>
           </nav>
 
@@ -79,7 +79,7 @@
            <div class="content rowFlex">
                 <div class="col30">
                     <div class="rowFlex">
-                        <div class="articleMini" >
+                        <div class="articleMini satellite" onclick="return false;">
                             <a href="">
                                 <img src="img/article/article2.jpg">
                                 <div class="testCut">
@@ -90,7 +90,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="articleMini" >
+                        <div class="articleMini planet" onclick="return false;">
                             <a href="">
                                 <img src="img/article/article3.jpg">
                                 <div>
@@ -106,7 +106,7 @@
                                 </div>
                             </a>
                         </div>
-                       <div class="articleMini" >
+                       <div class="articleMini galaxy" onclick="return false;">
                             <a href="">
                                 <img src="img/article/article4.jpg">
                                 <div>
@@ -118,7 +118,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="articleMini" >
+                        <div class="articleMini star" onclick="return false;">
                             <a href="">
                                 <img src="img/article/article1.jpg">
                                 <div>
@@ -132,18 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col70">
-                    <a href="">
-                    <div class="articleMax">
-                        <img src="img/article/article1.jpg">
-                            <h2>Un Astronaute dans l'espace</h2>
-                            <p>
-                                In a lab at NASA’s Johnson Space Center in Houston, engineers simulated conditions that astronauts in space suits would experience when the Orion spacecraft is vibrating during launch atop the agency’s powerful Space Launch System rocket on its way to deep space destinations. A series of tests occurring this month at Johnson will help human factors engineers assess how well the crew can interact with the displays and controls they will use to monitor Orion’s systems and operate the spacecraft when necessary</p>
-                            <p>
-                                In a lab at NASA’s Johnson Space Center in Houston, engineers simulated conditions that astronauts in space suits would experience when the Orion spacecraft is vibrating during launch atop the agency’s powerful Space Launch System rocket on its way to deep space destinations. A series of tests occurring this month at Johnson will help human factors engineers assess how well the crew can interact with the displays and controls they will use to monitor Orion’s systems and operate the spacecraft when necessary</p>
-                        </div>
-                    </a>
-                </div>
+                <div class="col70"></div>
             </div> 
         </div> 
         <footer class="footerBlog">
@@ -227,5 +216,6 @@
         <script src="js/toggleCGU.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/blogThemeBar.js"></script>
+        <script type="text/javascript" src="js/article.js"></script>
     </body>
 </html>
