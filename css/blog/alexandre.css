@@ -102,3 +102,9 @@ min-height: 100vh;
 .display{
   visibility: visible;
 }
+
+.fermerArticle{
+  border-radius: 50%;
+  float: right;
+  border-style: none;
+}
