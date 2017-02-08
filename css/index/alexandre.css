@@ -53,28 +53,6 @@
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
-
-.position{
-  position: fixed;
-  top: 50px;
-}
-
-.themeFont{
-  font-size: 85%;
-}
-
-.buttonPadding{
-  padding-right: 2vw;
-  padding-left: 2vw;
-  margin-left: 1vw;
-  margin-right: 1.5vw;
-  background-color: black;
-}
-
-.invisibility{
-  display: none;
-}
-
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -97,8 +75,4 @@
 
 .sizeSection{
 min-height: 100vh;
-}
-
-.display{
-  visibility: visible;
 }
