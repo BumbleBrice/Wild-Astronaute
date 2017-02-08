@@ -156,7 +156,7 @@ footer{
 }
 @media screen and (min-width: 768px) {
   footer {
-    position: absolute;
+    position: static;
     bottom: 0;
   }
 }
