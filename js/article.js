@@ -5,11 +5,14 @@ function newArticle(minArticle){
 	newArticle += $(minArticle).html();
 	newArticle += '</div>';
 	$(".col70").html(newArticle);
+	if (window.matchMedia("(max-width: 768px)").matches)
+		$(".articleMini").addClass("hidden");
 }
 
 function closeArticle() {
 	$(".col70").on("click", "button", () => {
 		$(".articleMax").remove();
+		$(".articleMini").removeClass("hidden");
 	});
 }
 

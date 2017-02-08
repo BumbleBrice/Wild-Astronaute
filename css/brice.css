@@ -184,7 +184,9 @@ hr {
     margin-bottom: 5%;
 }
 
-
+.activated {
+  background-color: black;
+}
 
 /*******************/
 /******FOOTER*******/

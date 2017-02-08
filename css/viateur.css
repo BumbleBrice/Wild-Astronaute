@@ -87,12 +87,15 @@
 }
 
 @media screen and (min-width: 769px){
-	
+
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
 	.articleMini {
 	    width: 48%;
     }
+    .hidden{
+		display: none;
+	}
 }
 	.articleMini a img{
 		width: 38%;
@@ -120,11 +123,17 @@
 		margin:0; 
 		font-size: 1rem;
 	}
+	.hidden{
+		display: none;
+	}
 }
 @media screen and (max-width: 360px) {
      .articleMini a div h2{
 		margin:0; 
 		font-size: 1.2rem;
+	}
+	.hidden{
+		display: none;
 	}
 }
 

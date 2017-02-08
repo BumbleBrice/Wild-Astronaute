@@ -15,6 +15,10 @@ function themePrint(themeTable){
 		for(let i in themeTable){
 			themeTable[i] = 0;
 		}
+		$('#planet').removeClass("activated");
+		$('#sattelite').removeClass("activated");
+		$('#star').removeClass("activated");
+		$('#galaxy').removeClass("activated");
 		zeroCount = oneCount;
 	}
 	if(zeroCount === length){
@@ -33,20 +37,24 @@ function themePrint(themeTable){
 
 $(function(){
 	let themeTable = [0, 0, 0, 0];
-	$('#planet').bind('click', function(){
+	$('#planet').bind('click', function() {
 		themeTable[0] === 0 ? themeTable[0] = 1 : themeTable[0] = 0;
+		$(this).toggleClass("activated");
 		themeTable = themePrint(themeTable);
 	});
-	$('#sattelite').bind('click', function(){
+	$('#sattelite').bind('click', function() {
 		themeTable[1] === 0 ? themeTable[1] = 1 : themeTable[1] = 0;
+		$(this).toggleClass("activated");
 		themeTable = themePrint(themeTable);
 	});
-	$('#star').bind('click', function(){
+	$('#star').bind('click', function() {
 		themeTable[2] === 0 ? themeTable[2] = 1 : themeTable[2] = 0;
+		$(this).toggleClass("activated");
 		themeTable = themePrint(themeTable);
 	});
-	$('#galaxy').bind('click', function(){
+	$('#galaxy').bind('click', function() {
 		themeTable[3] === 0 ? themeTable[3] = 1 : themeTable[3] = 0;
+		$(this).toggleClass("activated");
 		themeTable = themePrint(themeTable);
 	});
 	});
