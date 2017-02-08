@@ -11,7 +11,7 @@ img {
     width: 100%;
     max-height: 100%;
 }
-h1, h2 {
+h1 {
     text-transform: uppercase;
     margin: 0 0 35px;
     font-weight: 700;
@@ -64,14 +64,20 @@ nav ul {
   width: 50%;
 }
 nav ul a {
-  color: #eee;
+  color: black;
   text-decoration: none;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 768px){
+  nav ul a {
+    font-size: 1.3rem;
+  }
 }
 .navWrapper a:focus, a:hover {
     text-decoration: none;
 }
 nav ul a:hover {
-    color: black;
+    color: darkblue;
 }
 nav li {
   display: inline-block;
@@ -145,25 +151,34 @@ nav .navWrapper {
 footer{
 	background: black;
 	text-align: center;
-    position: relative;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
+  z-index: 0;
+  width: 100%;
 }
-
+@media screen and (min-width: 768px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    position: static;
+  }
+}
 
 .cgu {
     position: absolute;
     z-index: 1000;
     background-color: white;
-    bottom: 100px;
-    height: 78vh;
+    bottom: -100px;
+    height: 75vh;
     width: 99vw;
     font-size: 0.5rem;
     color: black;
     text-align: left;
     overflow-y:scroll;
 }
+@media screen and ()
 .cgu p {
     font-size: 1.2rem;
 }
