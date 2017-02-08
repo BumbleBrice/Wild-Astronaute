@@ -1,7 +1,7 @@
 "use strict"
 
 function newArticle(minArticle){
-	let newArticle = '<div class="articleMax"><button class="cross">x</button>';
+	let newArticle = '<div class="articleMax"><button class="fermerArticle"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>';
 	newArticle += $(minArticle).html();
 	newArticle += '</div>';
 	$(".col70").html(newArticle);
@@ -12,6 +12,7 @@ function closeArticle() {
 		$(".articleMax").remove();
 	});
 }
+
 $(function(){
 	let isPrinted = false;
 		$(".articleMini").bind("click", (e) => {
