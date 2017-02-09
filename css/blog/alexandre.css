@@ -108,7 +108,5 @@ min-height: 100vh;
 }
 
 .fermerArticle{
-  border-radius: 50%;
-  float: right;
-  border-style: none;
+  border-radius: 18px; float: right; border-style: none; width: 25px; height: 25px; margin-top: -10px; margin-bottom: 10px; background: black; color: white;
 }
