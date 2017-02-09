@@ -69,9 +69,9 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.content-section{
-  padding-top: 5vh;
-}
+/*.content-section{
+  padding-top: 10%;
+}*/
 
 .sizeSection{
 min-height: 100vh;

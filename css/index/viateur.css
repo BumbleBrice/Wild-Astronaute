@@ -12,6 +12,7 @@
 	width: 100%;
     text-align: center;
     background-size: cover;
+    padding-bottom: 6%;
 }
 
 #foundingTitle
@@ -42,6 +43,7 @@ width:100%;
 
 
 .socialNetwork{
+	padding-top: 4%;
 	padding-bottom: 4%;
 }
 
@@ -52,4 +54,9 @@ width:100%;
 	font-size: 1.5rem;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (min-width: 1280px) {
+	.foundingPosition p {
+		font-size: 2rem;
+	}
 }
