@@ -44,6 +44,12 @@ a:focus{
   display: inline-block;
   padding-left: 30%;
 }
+@media screen and (min-width: 981px){
+  .theme {
+    padding-left: 17%;
+    font-size: 2.5rem;    
+  }
+}
 @media screen and (min-width: 1281px){
   .theme {
     padding-left: 8%;
